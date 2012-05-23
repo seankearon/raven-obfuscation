@@ -1,0 +1,6 @@
+### Reproduces an issue when indexing from an obfuscated assembly. ###
+
+* You will need to install Eazfuscator from here: http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx.
+
+* The project is set to obfuscate in Release, and not in Debug.
+
