@@ -1,8 +1,8 @@
-### Reproduces an issue when indexing from an obfuscated assembly. ###
+### How to create an index in RavenDB from an obfuscated assembly. ###
 
-* You will need to install Eazfuscator from here: http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx.
+* Be aware of the caveats here: http://kearon.blogspot.co.uk/2012/05/embedded-ravendb-indexes-with.html
 
-* The project is set to obfuscate in Release, and not in Debug.
+* You will need to install Eazfuscator which sets the project to obfuscate in Release but not Debug.  Get it from from here: http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx.
 
 * Discussion here: https://groups.google.com/d/topic/ravendb/IsVxNXnSK6w/discussion
 
