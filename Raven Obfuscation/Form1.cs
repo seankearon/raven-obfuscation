@@ -19,10 +19,12 @@ namespace Raven_Obfuscation
             store = new EmbeddableDocumentStore { UseEmbeddedHttpServer = true };
             store.Initialize();
 
-            var definition = new PeopleByName {Conventions = new DocumentConvention()}.CreateIndexDefinition();
+            var peopleByName = new PeopleByName { Conventions = new DocumentConvention() };
+            var definition = peopleByName.CreateIndexDefinition();
+
             MessageBox.Show(definition.Map);
 
-            QueryOverTheIndex();
+            peopleByName.Execute(store);
         }
 
         private void QueryOverTheIndex()
